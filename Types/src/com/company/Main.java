@@ -132,7 +132,36 @@ public class Main {
         boolean myBoolean = true;
 
 
+//        STRING
+//        length can be as large as an int
+        String myString = "This is a string";
+        System.out.println("myString is equal to: " + myString);
 
+//        strings are immutable; each time you change one a
+        //new one is created - inefficient. use stringBuffer
+        //see later chapters
+
+
+        //OPERATORS
+        int result = 1 + 2;
+        //expression = operand operator operand
+
+        //TERNARY OPERATOR
+        // aka shorthand-if
+        //x = (boolean) ? true : false;
+
+        //OPERATOR CHALLENGE
+        double firstDouble = 20d;
+        double nextDouble = 80d;
+        double sumOfDoubles = (firstDouble + nextDouble) * 100d;
+        // ^^ these brackets make the difference due to operator
+        // precedence; well done me :D
+        double remainder = sumOfDoubles % 40d;
+        boolean hasRemainder = ( remainder == 0d );
+        System.out.println("Has Remainder? Equals: " + hasRemainder);
+        if(!hasRemainder){
+            System.out.println("Got some remainder!");
+        }
 
 
 
