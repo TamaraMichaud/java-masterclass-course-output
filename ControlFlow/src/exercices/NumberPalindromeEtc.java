@@ -1,6 +1,6 @@
 package exercices;
 
-public class NumberPalindrome {
+public class NumberPalindromeEtc {
 
     public static void main(String[] args) {
 
@@ -9,12 +9,15 @@ public class NumberPalindrome {
 //        System.out.println(isPalindrome(995599));
 //        System.out.println(isPalindrome(-222));
 
-        System.out.println(sumFirstAndLastDigit(252));
-        System.out.println(sumFirstAndLastDigit(257));
-        System.out.println(sumFirstAndLastDigit(0));
-        System.out.println(sumFirstAndLastDigit(5));
-        System.out.println(sumFirstAndLastDigit(-10));
+//        System.out.println(sumFirstAndLastDigit(252));
+//        System.out.println(sumFirstAndLastDigit(257));
+//        System.out.println(sumFirstAndLastDigit(0));
+//        System.out.println(sumFirstAndLastDigit(5));
+//        System.out.println(sumFirstAndLastDigit(-10));
 
+        System.out.println(getEvenDigitSum(123456789)); //20
+        System.out.println(getEvenDigitSum(252)); //4
+        System.out.println(getEvenDigitSum(-22)); //-1
 
 
 
@@ -61,6 +64,24 @@ public class NumberPalindrome {
         }
 
         return firstDigit + lastDigit;
+    }
+
+
+    public static int getEvenDigitSum(int number) {
+
+        if(number < 0) {
+            return -1;
+        }
+        int sumEvenDigits = 0;
+        while (number > 0) {
+            int nextNumber = number % 10;
+            if (nextNumber % 2 == 0) {
+                sumEvenDigits += nextNumber;
+            }
+            number /= 10;
+        }
+
+        return sumEvenDigits;
     }
 
 
