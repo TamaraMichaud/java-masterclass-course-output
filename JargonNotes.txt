@@ -1,0 +1,61 @@
+Reference -> the pointer in memory to this particular object (could have many)
+Object -> an instance of a class
+Instance -> another name for an object
+Class -> a blueprint for an object
+
+
+Inheritance; class1 extends class2
+
+Classes are instantiated using the "new" operator to create an Object, also known as an Instance.
+Each object has a particular Reference which can be passed around the program but remains simply "this Object" (not a copy of it!!) BE CAREFUL
+
+References can be passed as parameters to constructors and methods.
+
+Instance variable == a field in a class outside of any method
+Class variable == a field in a class outside of any method AND IS STATIC
+
+"super" is to access/call parent class fields/methods - related to method overriding
+"this" is to access/call the current  class fields/methods
+^^ they can be used anywhere BUT STATIC METHODS
+
+this() -> can only be used inside an overloaded constructor, when calling another of the
+class's constructors. It's used with constructor chaining.
+super() -> is always called as default by the Java compiler but can also be used manually like "this()"
+** any constructor can only have EITHER "this()" OR "super()" but not both...
+
+(Abstract classes -> have constructors, although they can never be instantiated. is effectively a super class.)
+
+--------
+Method overloading 
+	-> often referred to as Compile Time Polymorphism (but has nothing to do with polym.)
+	-> both instance and class (static) methods can be overloaded
+	-> a method that exists in a super class can be overloaded inside it's child class.
+	-> return type may or may not be different...
+	-> access modifiers ("private/protected/public") may or may not
+
+Method overriding
+	-> only inherited methods can be overridden - i.e. only child classes can do it.
+	-> literally @override, replace the other (probably parent) one.
+	-> also known as Runtime Polymorphism, or Dynamic Method Dispatch
+	-> canNOT override STATIC or FINAL methods, only instance methods
+	-> return type can be a sublcass of the return type in the parent class - covariant return type
+	-> it can't have a lower access modifier (if the parent method is PROTECTED, the child can only be the same or PUBLIC - NOT PRIVATE...)
+	-> a subclass can user super.methodName() to call the original version of an
+	overridden method
+
+
+Static Methods
+	-> whenever you see a method taht does NOT user instance variables; it should probably a static method...
+	-> "this" keyword is not allowed
+ 
+
+
+
+
+****** Polymorphism!
+** covariant return types...
+****** Access modifiers == "private/protected/public"
+
+
+
+
