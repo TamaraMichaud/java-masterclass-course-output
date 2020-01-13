@@ -1,18 +1,6 @@
-Reference -> the pointer in memory to this particular object (could have many)
-Object -> an instance of a class
-Instance -> another name for an object
-Class -> a blueprint for an object
-
-
-Inheritance; class1 extends class2
-
-Classes are instantiated using the "new" operator to create an Object, also known as an Instance.
-Each object has a particular Reference which can be passed around the program but remains simply "this Object" (not a copy of it!!) BE CAREFUL
-
-References can be passed as parameters to constructors and methods.
-
-Instance variable == a field in a class outside of any method
-Class variable == a field in a class outside of any method AND IS STATIC
+------------------------------------------------------------------------
+------ chapter 6; Classes, Constructors & Inheritance    ---------------
+------------------------------------------------------------------------
 
 "super" is to access/call parent class fields/methods - related to method overriding
 "this" is to access/call the current  class fields/methods
@@ -25,7 +13,7 @@ super() -> is always called as default by the Java compiler but can also be used
 
 (Abstract classes -> have constructors, although they can never be instantiated. is effectively a super class.)
 
---------
+------------------------
 Method overloading 
 	-> often referred to as Compile Time Polymorphism (but has nothing to do with polym.)
 	-> both instance and class (static) methods can be overloaded
@@ -47,12 +35,30 @@ Method overriding
 Static Methods
 	-> whenever you see a method taht does NOT user instance variables; it should probably a static method...
 	-> "this" keyword is not allowed
- 
 
 
 
+--------
+Reference -> the pointer in memory to this particular object (could have many)
+Object -> an instance of a class
+Instance -> another name for an object
+Class -> a blueprint for an object
 
-****** Polymorphism!
+
+Inheritance; class1 extends class2
+
+Classes are instantiated using the "new" operator to create an Object, also known as an Instance.
+Each object has a particular Reference which can be passed around the program but remains simply "this Object" (not a copy of it!!) BE CAREFUL
+
+References can be passed as parameters to constructors and methods.
+
+Instance variable == a field in a class outside of any method
+Class variable == a field in a class outside of any method AND IS STATIC
+
+----
+
+
+
 ** covariant return types...
 ****** Access modifiers == "private/protected/public"
 
