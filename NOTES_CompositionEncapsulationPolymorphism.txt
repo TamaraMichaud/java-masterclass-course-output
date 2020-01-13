@@ -1,0 +1,23 @@
+------------------------------------------------------------------------
+------ chapter 7; Composition, Encapsulation, Polymorphism  ------------
+------------------------------------------------------------------------
+
+INHERITANCE = classA extends classB = classA "is a" classB
+			e.g.  class Car extends Vehicle {}
+
+COMPOSITION = modelling parts of the greater whole; classA "has a" classB
+			e.g. class Computer implements Monitor {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
