@@ -1,4 +1,4 @@
-package composition;
+package composition.basic1;
 
 public class Motherboard {
 
