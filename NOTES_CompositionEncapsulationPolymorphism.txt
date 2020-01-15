@@ -1,7 +1,6 @@
 ------------------------------------------------------------------------
 ------ chapter 7; Composition, Encapsulation, Polymorphism  ------------
 ------------------------------------------------------------------------
-
 INHERITANCE = classA extends classB = classA "is a" classB
 			e.g.  class Car extends Vehicle {}
 
@@ -9,9 +8,21 @@ COMPOSITION = modelling parts of the greater whole; classA "has a" classB
 			e.g. class Computer implements Monitor {}
 
 
+general rule for java dev design; have a look at composition first before inheritance
+--------------------------------------
+
+ENCAPSULATION
+
+the mechanism which allows you to restrict access to certain components in a class... same as "access modifiers" but those are in relation to methods only (is it??)
+
+--------------------------------------
+
+POLYMORPHISM
+
+the mechanism which allows actions to behave differently, based on what object the action is  being performed on...
 
 
-
+--------------------------------------
 
 
 
