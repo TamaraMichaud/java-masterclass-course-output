@@ -42,7 +42,9 @@ public class Burger {
 
             for (int i = 1; i <= extrasAdded ; i++) {
 
-                receiptText += " - Extra item... errr!!     £ ? \n";
+                receiptText += " - Extra item               £ ? \n";
+                //TODO: ^^ improve this once we cover arrays/lists...
+                //(course solution uses addItem1(), addItem2() etc... i can't do it)
 
             }
 

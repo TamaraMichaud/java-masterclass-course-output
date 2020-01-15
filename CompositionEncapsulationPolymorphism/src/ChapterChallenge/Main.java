@@ -1,5 +1,6 @@
 package ChapterChallenge;
 
+import ChapterChallenge.subClasses.DeluxeBurger;
 import ChapterChallenge.subClasses.HealthyBurger;
 
 public class Main {
@@ -27,7 +28,9 @@ public class Main {
 
         fancyPants.printReceipt();
 
-
+        DeluxeBurger deluxeBurger = new DeluxeBurger();
+        deluxeBurger.addExtra("Onion", 0.99);
+        deluxeBurger.printReceipt();
 
     }
 
