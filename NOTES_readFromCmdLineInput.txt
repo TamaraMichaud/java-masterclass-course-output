@@ -1,0 +1,8 @@
+(at top of class declare:)  private static Scanner scanner = new Scanner(System.in);
+
+
+(then in code do;  )   scanner. (many options... e.g.   scanner.nextInt() will pause prog waiting for user input of an integer.   so you could do  "int mySpecificInt = scanner.nextInt()" 
+
+
+
+

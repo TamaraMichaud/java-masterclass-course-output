@@ -1,0 +1,30 @@
+-------------------------------------------------------
+-------------------------------------------------------
+
+
+
+-------------------------------------------------------
+-------------------------------------------------------
+REFERENCE TYPES vs VALUE TYPES
+- primitives are VALUE types; they hold an actual value
+	"int int1 = int2 = 10;"
+	"int2 = 12;" // this is fine, these are two very separate vars
+
+- Objects are REFERENCE types; they are a pointer to the object, not the object itself.  This includes Arrays and Strings also.
+	"int[] arr1 = arr2 = {1,2,3};"
+	"arr2[1] = 8;"// this will make BOTH arr1 and arr2 = {1,8,3}
+
+-------------------------------------------------------
+-------------------------------------------------------
+ARRAYS
+
+"array access operator" == [] -> the square-bracket-suffix
+
+- start;
+int myVariable = 50; // << regular var
+int[] myArray = new int[11]; // << saves 11 slots to be filled
+or
+int[] myArray = { 9, 34, 22, 10, 4, 61 } // << saves x slots and fills them
+
+- copy;
+int[] myNewArray = Arrays.copyOf(myOldArray, myOldArray.length);
