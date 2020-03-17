@@ -14,7 +14,13 @@ public class GroceryList {
     void printGroceryList() {
         System.out.println(String.format("List is %d items long", myArrayList.size()));
         for (int i = 0; i < myArrayList.size(); i++) {
-            System.out.println(String.format("Item %d has value %s", i + 1, myArrayList.get(i)));
+            System.out.println(String.format(" \t%d) - %s", i + 1, myArrayList.get(i)));
+        }
+    }
+
+    public void modifyGroceryItem(String itemToMod, String newItem) {
+        if (myArrayList.contains(itemToMod)) {
+            modifyGroceryItem(findItemNew(itemToMod), newItem);
         }
     }
 
@@ -27,12 +33,21 @@ public class GroceryList {
         }
     }
 
+    void removeGroceryItem(String itemName){
+        int idxPosition = findItemNew(itemName);
+        myArrayList.remove(idxPosition);
+    }
+
     void removeGroceryItem(int idxPosition) {
         if (idxPosition > 0 && idxPosition < myArrayList.size()) {
             myArrayList.remove(idxPosition);
         } else {
             System.out.println(String.format("Item number %d not found in list", idxPosition));
         }
+    }
+
+    int findItemNew(String soughtItem) {
+        return myArrayList.indexOf(soughtItem);
     }
 
     String findItem(String soughtItem) {
